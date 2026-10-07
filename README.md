@@ -5,6 +5,15 @@
 *This is our qualifier proposal. Nothing is built yet. We build it at the finals on 10 October 2026, so every
 performance number below is a target, not a result.*
 
+## Team
+
+| Role | Name | GitHub |
+|---|---|---|
+| Team leader | Rishi Sharma | [rishi-3009](https://github.com/rishi-3009) |
+| Member 2 | Harshavi Tank | [harshavi3009](https://github.com/harshavi3009) |
+| Member 3 | Aditya Girish Kharbikar | [adityakharbikar](https://github.com/adityakharbikar) |
+| Member 4 | Dhvani Chhatbar | [Dhvani943](https://github.com/Dhvani943) |
+
 ---
 
 ## 1. Project Name
@@ -155,6 +164,20 @@ Here's how we picture it in use (illustrative): a clerk in Nagpur gets a WhatsAp
 and drops it into SecondLook. Within about a minute (target), 14 fields show as `verified`. The supplier GSTIN is
 `corrected`, because a "0" had been read as "O", and the zoomed crop sits next to it. Line 2 is `document_error`:
 4 x 95.00 is 380.00, but the bill says 400.00. She posts the record and calls the supplier about line 2.
+
+### Expected impact
+
+For a CA firm, the change is where the clerk's time goes. Today every field of a handwritten bill gets typed or
+re-checked. With SecondLook the clerk looks only at the `suggested`, `uncertain` and `document_error` fields, each with
+its crop and reason. We'll measure how many fields that is (the flag rate in section 17) rather than guess a time saving
+now.
+
+The bigger effect is trust. A tool that quietly changes a number so the totals match is worse than no tool, because
+nobody knows which records to re-check. SecondLook never accepts a value that no reader saw, so a firm can post the
+`verified` fields straight into its books and review the rest with the reasons in front of it. It's also cheap and
+private enough for small firms to actually use: open-source models, one laptop, no per-page fees, and invoices stay in
+the office. And since there's no public dataset of handwritten GST invoices, our evaluation script (in the public final
+repo) gives others a way to measure handwriting accuracy instead of just claiming it.
 
 ---
 
