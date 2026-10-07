@@ -7,6 +7,8 @@ performance number below is a target, not a result.*
 
 ## Team
 
+Team name: **Obsidian**
+
 | Role | Name | GitHub |
 |---|---|---|
 | Team leader | Rishi Sharma | [rishi-3009](https://github.com/rishi-3009) |
